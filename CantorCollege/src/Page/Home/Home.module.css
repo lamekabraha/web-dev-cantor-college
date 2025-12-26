@@ -1,8 +1,10 @@
-.container {
+section {
     border-radius: 6px;
+    border: 1px solid #F28B30;
     background-color: #ffffff;
     margin: 10px;
-    padding: 10px 10px 20px 20px
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 .title{
@@ -17,13 +19,81 @@ li{
     list-style-type:square;
 }
 
+.desktopOnly {
+    display: none;
+}
+
 @media (min-width: 600px) {
     body{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .container{
+    section{
         max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aboutUsContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        padding: 0 20px 20px 20px;
+    }
+
+    .aboutUsContainer h2 {
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    .aboutUsContainer p {
+        grid-column: span 1;
+        text-align: justify;
+    }
+
+    .aboutUsImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .facilitiesContainer{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        padding: 0 20px 20px 20px;
+    }
+
+    .facilitiesContainer h2 {
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    .facilitiesContainer img{
+        grid-row: span 2;
+        align-self: center;
+    }
+
+
+    .computingContainer{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+    }
+
+    .computingContainer h2 {
+        grid-column: span 3;
+        text-align: center;
+    }
+
+    .computingContainer p {
+        column
+    }
+    
+    .desktopOnly {
+        display: block;
+    }
+    .mobileOnly {
+        display: none;
     }
 }
