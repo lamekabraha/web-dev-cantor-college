@@ -34,8 +34,6 @@ const App = () => {
       return <Learning />;
     case "Contact":
       return <Contact />;
-    default:
-      return <Home />;
     }
   };
 

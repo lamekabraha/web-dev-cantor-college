@@ -1,17 +1,6 @@
-section {
-    border-radius: 6px;
-    border: 1px solid #F28B30;
-    background-color: #ffffff;
-    margin: 10px;
-    padding: 10px 20px 10px 20px;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-}
+
 
 .title{
-    text-align: center;
-}
-
-h2 {
     text-align: center;
 }
 
@@ -38,7 +27,7 @@ li{
     .aboutUsContainer {
         display: grid;
         grid-template-columns: auto auto;
-        gap: 10px;
+        gap: 30px;
         padding: 0 20px 20px 20px;
     }
 
@@ -60,7 +49,7 @@ li{
     .facilitiesContainer{
         display: grid;
         grid-template-columns: auto auto;
-        gap: 10px;
+        gap: 30px;
         padding: 0 20px 20px 20px;
     }
 
@@ -70,15 +59,20 @@ li{
     }
 
     .facilitiesContainer img{
-        grid-row: span 2;
+        width: 100%;
+        height: auto;
         align-self: center;
+    }
+
+    .facilitiesContainer p {
+        text-align: left;
     }
 
 
     .computingContainer{
         display: grid;
         grid-template-columns: auto auto auto;
-        gap: 10px;
+        gap: 30px;
     }
 
     .computingContainer h2 {
@@ -87,7 +81,36 @@ li{
     }
 
     .computingContainer p {
-        column
+        grid-column: span 1;
+        grid-row-start: span 2;
+        text-align:left;}
+
+    .computingContainer img{
+        width: 100%;
+        height: auto;
+        align-self: center;
+    }
+
+    .designContainer h2 {
+        grid-column: span 3;
+        text-align: center;
+    }
+
+    .designContainer{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+    }
+
+    .designContainer p {
+        grid-column: span 1;
+        grid-row-start: span 2;
+        text-align:left;}
+
+    .designContainer img{
+        width: 100%;
+        height: auto;
+        align-self: center;
     }
     
     .desktopOnly {
