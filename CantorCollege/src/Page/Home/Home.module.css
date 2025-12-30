@@ -1,20 +1,15 @@
-.container {
-    border-radius: 6px;
-    background-color: #ffffff;
-    margin: 10px;
-    padding: 10px 10px 20px 20px
-}
+
 
 .title{
     text-align: center;
 }
 
-h2 {
-    text-align: center;
-}
-
 li{
     list-style-type:square;
+}
+
+.desktopOnly {
+    display: none;
 }
 
 @media (min-width: 600px) {
@@ -23,7 +18,105 @@ li{
         justify-content: center;
         align-items: center;
     }
-    .container{
+    section{
         max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aboutUsContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        padding: 0 20px 20px 20px;
+    }
+
+    .aboutUsContainer h2 {
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    .aboutUsContainer p {
+        grid-column: span 1;
+        text-align: justify;
+    }
+
+    .aboutUsImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .facilitiesContainer{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        padding: 0 20px 20px 20px;
+    }
+
+    .facilitiesContainer h2 {
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    .facilitiesContainer img{
+        width: 100%;
+        height: auto;
+        align-self: center;
+    }
+
+    .facilitiesContainer p {
+        text-align: left;
+    }
+
+
+    .computingContainer{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+    }
+
+    .computingContainer h2 {
+        grid-column: span 3;
+        text-align: center;
+    }
+
+    .computingContainer p {
+        grid-column: span 1;
+        grid-row-start: span 2;
+        text-align:left;}
+
+    .computingContainer img{
+        width: 100%;
+        height: auto;
+        align-self: center;
+    }
+
+    .designContainer h2 {
+        grid-column: span 3;
+        text-align: center;
+    }
+
+    .designContainer{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+    }
+
+    .designContainer p {
+        grid-column: span 1;
+        grid-row-start: span 2;
+        text-align:left;}
+
+    .designContainer img{
+        width: 100%;
+        height: auto;
+        align-self: center;
+    }
+    
+    .desktopOnly {
+        display: block;
+    }
+    .mobileOnly {
+        display: none;
     }
 }
