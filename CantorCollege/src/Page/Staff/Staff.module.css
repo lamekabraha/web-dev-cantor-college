@@ -1,0 +1,42 @@
+.cardComponent img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (min-width: 600px) {
+    .cardComponent{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+   
+    section h3{
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    section p{
+        grid-column: span 1;
+        text-align: left;
+        
+    }
+
+    section img{
+        width: 100%;
+        height:auto;
+        justify-self: center;
+    }
+
+    .facilitiesCard{
+        grid-column-start: 2;
+    }
+}

@@ -22,7 +22,9 @@ const Header = ({ handleNav }) =>{
                     ))}
                 </div>
                 <span className={styles.menuContainer}>
-                    <button onClick={() => setMenuOpen(!menuOpen)} className={styles.menu}>Menu</button>
+                    <button onClick={() => setMenuOpen(!menuOpen)}>
+                        Menu
+                    </button>
                 </span>
             </div>
             {menuOpen && (
