@@ -50,26 +50,26 @@ const Home =() =>{
                 <Card 
                 title="Cutting-Edge Expertise"
                 description="Our programs are at the forefront of industry trends, ensuring that our services reflect the latest advancements in technology and design."
-                imageSrc=""
-                imageAlt=""
+                imageSrc="./shuLab.jpg"
+                imageAlt="Cantor College networking lab"
                 />
                 <Card 
                 title="Innovation at the Core"
                 description="We foster a culture of creativity and problem-solving, making us the ideal partner for businesses seeking innovative solutions."
-                imageSrc=""
-                imageAlt=""
+                imageSrc="./shuCanonPartner.webp"
+                imageAlt="Cantor College partnership with Canon to drive innovation"
                 />
                 <Card 
-                title="Tailored Solutions"
+                title="Tailor Solutions"
                 description="We understand that every business is unique. Our services are customized to meet your specific objectives and challenges."
-                imageSrc=""
-                imageAlt=""
+                imageSrc="./shuCollaboration.jpg"
+                imageAlt="Entrepreneurs collaborating on a project"
                 />
                 <Card 
                 title="Future-Ready Talent"
                 description="Our students are trained to excel in the modern workplace, equipped with both theoretical knowledge and practical skills."
-                imageSrc=""
-                imageAlt=""
+                imageSrc="./shuComputerClass.JPG"
+                imageAlt="Cantor College Computing class"
                 />
            </span>
         </>
