@@ -7,6 +7,11 @@ const Header = ({ handleNav }) =>{
 
     const links = ['Home', 'Students', 'Staff', 'Business', 'Learning Resources', 'Contact Us'];
 
+    const linkPressed = (ev, link) => {
+        handleNav(ev, link);
+        setMenuOpen(false);
+    };
+
     return(
         <header className={styles.container}>
             <div className={styles.headerContainer}>
@@ -22,17 +27,17 @@ const Header = ({ handleNav }) =>{
                     ))}
                 </div>
                 <span className={styles.menuContainer}>
-                    <button onClick={() => setMenuOpen(!menuOpen)} className={styles.menu}>Menu</button>
+                    <button onClick={() => setMenuOpen(!menuOpen)}>
+                        Menu
+                    </button>
                 </span>
             </div>
             {menuOpen && (
                 <div className={styles.navbarContainer}>
                     {links.map((link) => (
-                        <li key={link}>
-                            <a href="#" onClick={(ev) => handleNav(ev, link)}>
-                                {link}
-                            </a>
-                        </li>
+                        <a key={link} href="#" onClick={(ev) => linkPressed(ev, link)}>
+                            {link}
+                        </a>
                     ))}
                 </div>
             )}

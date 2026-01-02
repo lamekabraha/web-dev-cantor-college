@@ -1,13 +1,16 @@
 import styles from './Students.module.css';
 import Card from '../../Components/Card/Card.jsx';
 
-const Home =() =>{
+const Students =() =>{
     return(
         <>
             <h2>Students</h2>
             <section>
                 <h3>Explore Cantor College: World-Class Facilities for Your Success</h3>
-                <p>At Cantor College, we are committed to providing our students with the best possible environment to learn, create, and innovate. Our state-of-the-art facilities are designed to support your academic journey and help you thrive in your chosen field. Whether you’re studying computing, design, or technology, our campus offers everything you need to excel.</p>
+                <span>
+                    <p>At Cantor College, we are committed to providing our students with the best possible environment to learn, create, and innovate. Our state-of-the-art facilities are designed to support your academic journey and help you thrive in your chosen field. Whether you’re studying computing, design, or technology, our campus offers everything you need to excel.</p>
+                    <button>Find Your Course</button>
+                </span>
                 <img src="./graffitiWall.jpeg" alt="Graffiti Art Wall" width="100%" height="auto" />
             </section>
 
@@ -85,4 +88,4 @@ const Home =() =>{
     )
 }
 
-export default Home;
+export default Students;

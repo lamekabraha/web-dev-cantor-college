@@ -5,7 +5,7 @@ import Students from './Page/Students/Students'
 import Staff from './Page/Staff/Staff'
 import Business from './Page/Business/Business'
 import Learning from './Page/Learning/Learning'
-import Contact from './Page/Learning/Contact/Contact'
+import Contact from './Page/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import { useState } from 'react'
 
@@ -30,9 +30,9 @@ const App = () => {
       return <Staff />;
     case "Business":
       return <Business />;
-    case "Learning":
+    case "Learning Resources":
       return <Learning />;
-    case "Contact":
+    case "Contact Us":
       return <Contact />;
     }
   };

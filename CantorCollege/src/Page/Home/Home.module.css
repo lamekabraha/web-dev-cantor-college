@@ -13,11 +13,6 @@ li{
 }
 
 @media (min-width: 600px) {
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     section{
         max-width: 75%;
         margin-left: auto;
@@ -113,10 +108,4 @@ li{
         align-self: center;
     }
     
-    .desktopOnly {
-        display: block;
-    }
-    .mobileOnly {
-        display: none;
-    }
 }
