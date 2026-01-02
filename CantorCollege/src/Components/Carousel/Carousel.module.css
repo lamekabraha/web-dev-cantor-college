@@ -1,0 +1,68 @@
+/* .carouselContainer {
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.carouselImage {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.navPrev, .navNext {
+    height: 40px;
+    width: 60px;
+    grid-row-start: 2;
+} */
+
+/* DEFAULT: Mobile Styles (Screens 0px to 767px) */
+.carouselContainer {
+    display: flex;
+    flex-direction: column; /* Stack buttons and image vertically on mobile */
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+}
+
+.carouselImage {
+    width: 100%;
+    height: 250px; /* Shorter height for mobile screens */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.navButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* DESKTOP: Styles for screens 768px and wider */
+@media (min-width: 600px) {
+    .carouselContainer {
+        display: grid;
+        grid-template-columns: 1fr auto; /* Side-by-side layout for desktop */
+        grid-template-rows: auto auto;
+        flex-direction: row;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .navButtons{
+        grid-column: span 2;
+        display: flex;
+        justify-content:center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .carouselImage {
+        height: 300px;
+        width: auto;
+    }
+}

@@ -1,0 +1,49 @@
+form{
+    gap:10px;
+    display: grid;
+}
+
+.emailContainer, .messageContainer{
+    display: grid;
+    gap: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+button{
+    grid-column-end: 3;
+    width: fit-content;
+    justify-self: end;
+}
+
+input, textarea{
+    border: 1px solid #F29B30;
+    border-radius: 6px;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding: 0 8px
+}
+
+textarea{
+    resize: none;;
+}
+
+@media(min-width: 600px){
+    span{
+        grid-template-columns: 0.5fr 1.5fr;
+    }
+
+    input{
+        height: fit-content;
+        align-self: center
+    }
+
+    button{
+        grid-column-end: 3;
+    }
+
+    input::placeholder, textarea::placeholder{
+        color:transparent;
+    }
+}

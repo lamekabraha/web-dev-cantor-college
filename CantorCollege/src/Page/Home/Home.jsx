@@ -12,8 +12,8 @@ const Home =() =>{
 
         <section className={styles.facilitiesContainer}>
             <h2>Facilities</h2>
-            <img className={styles.desktopOnly} src="./PXL_20250728_090645206.jpg" alt="Cantor College reception area" width="100%" />
-            <span className={styles.desktopOnly}>
+            <img className="desktopOnly" src="./PXL_20250728_090645206.jpg" alt="Cantor College reception area" width="100%" />
+            <span className="desktopOnly">
                 <p>The College is located in the attractive and pleasantly refurbished Building. The building houses computing laboratories, and lecture/tutorial rooms. It has its own catering facilities and student work areas. There is also a car park to the back of the building. Our building has space of 9500m², houses over 240 staff and provides teaching space for more than 1600 students.</p>
                 <p>Facilities include:</p>
                 <ul>
@@ -32,8 +32,8 @@ const Home =() =>{
                     <li>Gallery</li>
                 </ul>
             </span>
-            <img className={styles.mobileOnly} src="./PXL_20250728_090645206.jpg" alt="Cantor College reception area" width="100%" />
-            <span className={styles.mobileOnly}>
+            <img className="mobileOnly" src="./PXL_20250728_090645206.jpg" alt="Cantor College reception area" width="100%" />
+            <span className="mobileOnly">
                 <p>Facilities include:</p>
                 <ul>
                     <li>WIFI technology</li>
@@ -57,14 +57,14 @@ const Home =() =>{
         <section className={styles.computingContainer}>
             <h2>Computer Courses</h2>
             <p id='p1'>The College offers a range of courses to suit applicants with varying backgrounds and educational abilities. At undergraduate level, there are single BSc Honours Degree courses in Computing, Computer Networks, Software Engineering and Cyber Security with Forensics amongst others.</p>
-            <img className={styles.mobileOnly} src="./group_work.jpg" alt="Student working in a group" width="100%" />
+            <img className="mobileOnly" src="./group_work.jpg" alt="Student working in a group" width="100%" />
             <p id='p2'>The College teaches undergraduate and postgraduate courses in a wide range of specialisms, including computer science, software development, information systems, networking and software engineering. It is at the heart of a passionate computing community, including student societies devoted to games development, digital forensics and programming.</p>
-            <img className={styles.mobileOnly} src="./robotics.jpg" alt="Student demonstrating robotics project" width="100%" />
+            <img className="mobileOnly" src="./robotics.jpg" alt="Student demonstrating robotics project" width="100%" />
             <p id='p3'>The courses are British Computer Society accredited and are highly relevant to modern industry. They are designed to prepare students for professional occupations in Computing and related fields. Many graduates continue their studies to pursue a higher degree such as an MSc. or PhD.</p>
-            <img className={styles.mobileOnly} src="./public_study_area.jpg" alt="Public study area at Cantor College" width="100%" />
-            <img className={styles.desktopOnly} src="./group_work.jpg" alt="Student working in a group" width="100%" />
-            <img className={styles.desktopOnly} src="./robotics.jpg" alt="Student demonstrating robotics project" width="100%" />
-            <img className={styles.desktopOnly} src="./public_study_area.jpg" alt="Public study area at Cantor College" width="100%" />
+            <img className="mobileOnly" src="./public_study_area.jpg" alt="Public study area at Cantor College" width="100%" />
+            <img className="desktopOnly" src="./group_work.jpg" alt="Student working in a group" width="100%" />
+            <img className="desktopOnly" src="./robotics.jpg" alt="Student demonstrating robotics project" width="100%" />
+            <img className="desktopOnly" src="./public_study_area.jpg" alt="Public study area at Cantor College" width="100%" />
         </section>
 
 
@@ -72,13 +72,13 @@ const Home =() =>{
         <section className={styles.designContainer}>
             <h2>Design Courses</h2>
             <p>The College is an internationally connected creative community of diverse disciplines housed under one roof. We shape our students' futures, preparing them to shape the world through applied knowledge and creativity.</p>
-            <img className={styles.mobileOnly} src="./seminar_classroom.jpg" alt="Seminar classroom for design students" width="100%" />
+            <img className="mobileOnly" src="./seminar_classroom.jpg" alt="Seminar classroom for design students" width="100%" />
             <p>The College's art and design courses don't just train you, they promote alternative ways of thinking, making and communicating; they provide you with space, tools and inspiration to develop your creative practice and a clear career path. You'll get expert teaching from active practitioners and researchers who will encourage you to adopt innovative and resourceful approaches that both perceive and create opportunities for better lives.</p>
-            <img className={styles.mobileOnly} src="./computer_lab.jpg" alt="Computer lab at Cantor College" width="100%" />
+            <img className="mobileOnly" src="./computer_lab.jpg" alt="Computer lab at Cantor College" width="100%" />
             <p>You’ll develop your creative practice whilst interacting with your peers in well-equipped studios, making and digital workshops. At the same time, you'll learn professional skills by working on applied briefs facilitated through our links with commercial clients, cultural institutions, businesses and organisations.</p>
-            <img className={styles.desktopOnly} src="./seminar_classroom.jpg" alt="Seminar classroom for design students" width="100%" />
-            <img className={styles.desktopOnly} src="./computer_lab.jpg" alt="Computer lab at Cantor College" width="100%" />
-            <img className={styles.desktopOnly} src="./computer_lab(1).jpg" alt="Computer lab at Cantor College" width="100%" />
+            <img className="desktopOnly" src="./seminar_classroom.jpg" alt="Seminar classroom for design students" width="100%" />
+            <img className="desktopOnly" src="./computer_lab.jpg" alt="Computer lab at Cantor College" width="100%" />
+            <img className="desktopOnly" src="./computer_lab(1).jpg" alt="Computer lab at Cantor College" width="100%" />
         </section>
        </>
     )
